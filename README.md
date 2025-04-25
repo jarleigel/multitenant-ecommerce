@@ -19,3 +19,16 @@ git push -u origin main
 
 Git rutiner pr kapittel:
 git checkout -b 05-search-filters
+git add .
+git commit -m "05: search filters"
+git push -u origin 05-search-filters
+Så i github.com:
+"Compare & pull request"
+"Create pull request"
+"Merge pull request"
+"Confirm merge"
+
+Etterpå:
+git checkout master
+git pull origin main
+git status
