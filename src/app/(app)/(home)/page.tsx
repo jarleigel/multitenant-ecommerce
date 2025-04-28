@@ -1,9 +1,8 @@
-
 export default function Home() {
 
   return (
     <div>
-      HOME
+      HEIM
     </div>
   );
 }
