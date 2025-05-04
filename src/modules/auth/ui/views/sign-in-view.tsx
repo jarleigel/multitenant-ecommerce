@@ -46,7 +46,7 @@ export const SignInView = () => {
     })
 
     const onSubmit = (values: z.infer<typeof loginSchema>) => {
-        console.log("LOGIN-USERNAME:", {values});
+        // console.log("LOGIN-USERNAME:", {values});
         login.mutate(values)
     }
 
