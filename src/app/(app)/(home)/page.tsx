@@ -4,7 +4,7 @@ import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 import { getQueryClient, trpc } from '@/trpc/server'
 
 import { loadProductFilters } from '@/modules/products/search-params'
-import { ProductListView } from '@/modules/products/ui/views/product-list'
+import { ProductListView } from '@/modules/products/ui/views/product-list-view'
 import { DEFAULT_LIMIT } from '@/constants'
 
 interface Props {
@@ -13,8 +13,6 @@ interface Props {
 
 const Page = async ({ searchParams }: Props) => {
   const filters = await loadProductFilters(searchParams)
-
-  console.log(JSON.stringify(filters), 'DETTE er FRA RSC')
 
   const queryClient = getQueryClient()
 
