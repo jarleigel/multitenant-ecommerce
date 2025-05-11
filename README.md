@@ -32,3 +32,5 @@ Etterpå:
 git checkout master
 git pull origin main
 git status
+
+Kommet til: 48:59
