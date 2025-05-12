@@ -33,4 +33,4 @@ git checkout master
 git pull origin main
 git status
 
-Kommet til: 48:59
+Kjøre stripe i et annet vindu: stripe listen --forward-to localhost:3000/api/stripe/webhook
