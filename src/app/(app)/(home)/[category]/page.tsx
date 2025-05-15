@@ -18,8 +18,6 @@ const Page = async ({ params, searchParams }: Props) => {
   const { category } = await params
   const filters = await loadProductFilters(searchParams)
 
-  console.log(JSON.stringify(filters), 'DETTE er FRA RSC')
-
   const queryClient = getQueryClient()
 
   void queryClient.prefetchInfiniteQuery(
