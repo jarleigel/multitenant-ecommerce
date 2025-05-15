@@ -32,6 +32,7 @@ export const baseProcedure = t.procedure.use(async ({ next }) => {
 export const protectedProcedure = baseProcedure.use(async ({ ctx, next }) => {
   const headers = await getHeaders()
   const session = await ctx.db.auth({ headers })
+  console.log('❌Inne i protectedProcedure', session.user)
 
   if (!session.user) {
     throw new TRPCError({
