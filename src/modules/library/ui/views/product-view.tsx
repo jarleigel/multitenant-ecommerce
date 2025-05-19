@@ -39,7 +39,11 @@ export const ProductView = ({ productId }: Props) => {
             </div>
           </div>
           <div className="lg:col-span-5">
-            <p className="font-medium italic to-muted-foreground">Ikke noe spesielt innhold</p>
+            {data.content ? (
+              <p>{data.content}</p>
+            ) : (
+              <p className="font-medium italic to-muted-foreground">Ikke noe spesielt innhold</p>
+            )}
           </div>
         </div>
       </section>
