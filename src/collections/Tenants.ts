@@ -53,7 +53,7 @@ export const Tenants: CollectionConfig = {
       name: 'stripeDetailsSubmitted',
       type: 'checkbox',
       admin: {
-        readOnly: true,
+        // readOnly: true,
         description: 'Du kan ikke opprette produkter før du har lagt inn Stripe detaljene',
       },
     },
