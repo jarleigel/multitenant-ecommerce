@@ -3,6 +3,8 @@ import { getQueryClient, trpc } from '@/trpc/server'
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
 import { Suspense } from 'react'
 
+export const dynamic = 'force-dynamic'
+
 interface Props {
   params: Promise<{
     productId: string
